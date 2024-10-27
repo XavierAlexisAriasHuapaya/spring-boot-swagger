@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: app-swagger
+  datasource:
+    url: jdbc:mysql://localhost:3434/dbswagger
+    username: usrswagger
+    password: lUNhxkydI9zN63WRd231
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+
+server:
+  servlet:
+    context-path: /api/swagger
+  port: 8181
+
+springdoc:
+  swagger-ui:
+    path: /docs
+    disable-swagger-default-url: true
+    layout: StandaloneLayout
